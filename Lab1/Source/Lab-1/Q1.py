@@ -13,15 +13,15 @@ while True :
     print("The length of the password should be not be greater than 16")
     continue
 
- #checking for any numbers in the password entered
+ #checking for any numbers in the password entered using isdigit()
  elif not any(char.isdigit() for char in passwcheck):
     print('The password should have at least one numeral')
     continue
- #checking for Upper case letters entered
+ #checking for Upper case letters entered using isupper()
  elif not any(char.isupper() for char in passwcheck):
     print('The password should have at least one uppercase letter')
     continue
- #checking for lower case letter entered
+ #checking for lower case letter entered using islower()
  elif not any(char.islower() for char in passwcheck):
     print('The password should have at least one lowercase letter')
     continue
